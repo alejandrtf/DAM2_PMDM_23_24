@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EjemploSubirBajarBotones</string>
+    <string name="titulo">Introducir la palabra para jugar</string>
+    <string name="hint_palabra">introduce texto</string>
+    <string name="bajar">BAJAR\n</string>
+    <string name="subir">SUBIR\n</string>
+    <string name="mensaje_no_texto">No hay texto que mover</string>
+</resources>
