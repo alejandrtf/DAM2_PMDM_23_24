@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EjemploSpinnerPresencial</string>
+    <string name="ejemplo_spinner">Ejemplo Spinner</string>
+    <string name="procesadores">Procesadores</string>
+    <string name="estado_civil">Estado civil</string>
+    <string name="elige_estado_civil">Elige estado civil</string>
+    <string name="pa_ses">Países</string>
+    <string name="lista_de_la_compra">Lista de la Compra</string>
+    <string name="productos">Productos a Comprar</string>
+    <string name="a_adir_carrito">AÑADIR CARRITO</string>
+    <string name="borrar_del_carrito">BORRAR DEL CARRITO</string>
+    <string name="carrito_de_la_compra">Carrito de la Compra</string>
+</resources>
