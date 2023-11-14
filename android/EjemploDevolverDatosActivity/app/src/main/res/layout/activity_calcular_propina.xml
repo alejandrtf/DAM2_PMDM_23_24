@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalcularPropinaActivity">
+
+    <TextView
+        android:id="@+id/tvImporteSinPropinaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/importe_sin_propina"
+        app:layout_constraintBottom_toTopOf="@+id/tvPorcentajesPropinaLabel"
+        app:layout_constraintEnd_toStartOf="@+id/tvImporteSinPropina"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvImporteSinPropina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@color/material_dynamic_neutral70"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvImporteSinPropinaLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvImporteSinPropinaLabel"
+        tools:text="200 €" />
+
+    <TextView
+        android:id="@+id/tvPorcentajesPropinaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        android:text="@string/qu_porcentaje_de_propina_quieres_a_adir"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/rgPorcentajesPropina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvImporteSinPropinaLabel" />
+
+    <RadioGroup
+        android:id="@+id/rgPorcentajesPropina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fondo_rg_porcentajes"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btCalcularPropinaPorcentaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPorcentajesPropinaLabel">
+
+        <RadioButton
+            android:id="@+id/rb15percent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/_15" />
+
+        <RadioButton
+            android:id="@+id/rb18percent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_18" />
+
+        <RadioButton
+            android:id="@+id/rb20percent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_20" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btCalcularPropinaPorcentaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/calcular_propina"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btCancelar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgPorcentajesPropina" />
+
+    <Button
+        android:id="@+id/btCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/canceler"
+        app:layout_constraintBottom_toBottomOf="@+id/btCalcularPropinaPorcentaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btCalcularPropinaPorcentaje"
+        app:layout_constraintTop_toTopOf="@+id/btCalcularPropinaPorcentaje" />
+</androidx.constraintlayout.widget.ConstraintLayout>
