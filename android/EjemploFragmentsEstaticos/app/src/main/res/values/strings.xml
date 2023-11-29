@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EjemploFragmentsEstaticos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="escribre_una_palabra">ESCRIBRE UNA PALABRA</string>
+    <string name="introduce_una_palabra">Introduce una palabra</string>
+    <string name="invertir">INVERTIR</string>
+    <string name="al_rev_s_es">Al revés es</string>
+    <string name="contar_letras">CONTAR LETRAS</string>
+</resources>
