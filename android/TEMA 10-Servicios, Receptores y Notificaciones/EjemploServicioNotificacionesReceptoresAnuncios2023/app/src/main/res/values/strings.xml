@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EjemploServicioNotificacionesReceptoresAnuncios2023</string>
+    <string name="urldescarga"><![CDATA[https://firebasestorage.googleapis.com/v0/b/my-applicationhechaenclase.appspot.com/o/notas.csv?alt=media&token=bdc17726-4dec-4aff-830d-3595a1582c2f]]></string>
+</resources>
